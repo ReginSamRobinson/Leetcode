@@ -1,0 +1,34 @@
+class Solution:
+    def isValid(self, s: str) -> bool:
+        round_balance = 0
+        square_balance = 0
+        curly_balance = 0
+        stack = []
+        
+        for char in s:
+            if char == '(':
+                round_balance += 1
+                stack.append('(')
+            elif char == ')':
+                round_balance -= 1
+                if not stack or stack.pop() != '(':
+                    return False
+            elif char == '[':
+                square_balance += 1
+                stack.append('[')
+            elif char == ']':
+                square_balance -= 1
+                if not stack or stack.pop() != '[':
+                    return False
+            elif char == '{':
+                curly_balance += 1
+                stack.append('{')
+            elif char == '}':
+                curly_balance -= 1
+                if not stack or stack.pop() != '{':
+                    return False
+            
+            if round_balance < 0 or square_balance < 0 or curly_balance < 0:
+                return False
+        
+        return round_balance == 0 and square_balance == 0 and curly_balance == 0
