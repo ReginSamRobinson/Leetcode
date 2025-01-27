@@ -1,0 +1,8 @@
+class Solution:
+    def divide(self, dividend: int, divisor: int) -> int:
+        MAX_INT = 2147483647
+        MIN_INT = -2147483648
+        if dividend == MIN_INT and divisor == -1:
+            return MAX_INT        
+        r = int(dividend / divisor)
+        return r
