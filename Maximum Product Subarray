@@ -1,0 +1,17 @@
+class Solution:
+    def maxProduct(self, nums: List[int]) -> int:
+        if not nums:
+            return 0
+        
+        a = b = c = nums[0]
+        
+        for d in nums[1:]:
+            if d < 0:
+                a, b = b, a
+            
+            a = max(d, a * d)
+            b = min(d, b * d)
+            
+            c = max(c, a)
+        
+        return c
