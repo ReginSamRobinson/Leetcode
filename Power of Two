@@ -1,0 +1,4 @@
+class Solution:
+    def isPowerOfTwo(self, n: int) -> bool:
+        p = {2**i for i in range(31)}
+        return n in p
