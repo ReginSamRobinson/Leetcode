@@ -1,0 +1,26 @@
+class Solution:
+    def trap(self, height: List[int]) -> int:
+        if not height or len(height) < 3:
+            return 0  # No water can be trapped if the array is empty or has less than 3 bars.
+
+        left, right = 0, len(height) - 1  # Initialize two pointers.
+        maxLeft, maxRight = 0, 0  # Track maximum heights on both sides.
+        trapped_water = 0  # Variable to accumulate total trapped water.
+
+        while left < right:
+            if height[left] <= height[right]:
+                # Process the left pointer.
+                if height[left] < maxLeft:
+                    trapped_water += maxLeft - height[left]
+                else:
+                    maxLeft = height[left]
+                left += 1
+            else:
+                # Process the right pointer.
+                if height[right] < maxRight:
+                    trapped_water += maxRight - height[right]
+                else:
+                    maxRight = height[right]
+                right -= 1
+
+        return trapped_water  # Return the total amount of trapped water.
