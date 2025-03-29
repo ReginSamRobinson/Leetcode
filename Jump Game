@@ -1,0 +1,15 @@
+class Solution:
+    def canJump(self, nums: List[int]) -> bool:
+        # Initialize the maximum reachable index as 0.
+        max_reachable = 0
+        
+        # Traverse through the array.
+        for i in range(len(nums)):
+            # If the current index is beyond the maximum reachable index, return False.
+            if i > max_reachable:
+                return False
+            # Update the maximum reachable index.
+            max_reachable = max(max_reachable, i + nums[i])
+        
+        # If we finish the loop, it means we can reach the last index.
+        return True
