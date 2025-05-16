@@ -1,66 +1,40 @@
-```markdown
-# Leetcode Solutions
+Leetcode Solutions
 
 Welcome to my collection of Leetcode problem solutions! 🚀
 
-This repository contains my personal solutions to a variety of coding problems from [Leetcode](https://leetcode.com/). Each solution is written with clarity and efficiency in mind, often with comments and explanations.
+This repository contains my personal solutions to a variety of coding problems from Leetcode. Each solution is written with clarity and efficiency in mind, often with comments and explanations.
+📚 Contents
 
-## 📚 Contents
+    Solutions are organized by problem number and name.
+    Each folder or file usually contains:
+        The problem statement (as a comment or in a separate file)
+        My code solution
+        Explanations or comments (when needed)
 
-- Solutions are organized by problem number and name.
-- Each folder or file usually contains:
-  - The problem statement (as a comment or in a separate file)
-  - My code solution
-  - Explanations or comments (when needed)
+💡 Purpose
 
-## 💡 Purpose
+    Track my progress on Leetcode.
+    Share approaches and code with others.
+    Improve problem-solving and coding skills.
 
-- Track my progress on Leetcode.
-- Share approaches and code with others.
-- Improve problem-solving and coding skills.
-
-## 🛠️ Languages Used
+🛠️ Languages Used
 
 List the languages you use, for example:
-- Python
-- Java
-- C++
-- JavaScript
 
-(Adjust this section based on your actual content.)
+    Python
+    Java
+    C++
+    JavaScript
 
-## 🗂️ Structure
+🧑‍💻 How to Use
 
-Each solution is typically located in a file or folder named after the problem, for example:
-```
-/two-sum.py
-/3-longest-substring-without-repeating-characters.cpp
-```
-Or structured by language:
-```
-/python/two-sum.py
-/cpp/longest-palindromic-substring.cpp
-```
+    Find the problem you’re interested in.
+    Read the code and comments.
+    Run the code in your local environment or preferred compiler/interpreter.
 
-## 📈 Progress
-
-You can add a badge or a count of problems solved, for example:
-```
-Problems Solved: 50+
-```
-Or use a dynamic badge from [shields.io](https://shields.io/).
-
-## 🧑‍💻 How to Use
-
-1. Find the problem you’re interested in.
-2. Read the code and comments.
-3. Run the code in your local environment or preferred compiler/interpreter.
-
-## 🤝 Contributions
+🤝 Contributions
 
 Feel free to open issues or pull requests if you spot bugs or want to discuss alternative solutions!
-
-## 📜 License
+📜 License
 
 This repository is for educational purposes. If you use or share these solutions, please give appropriate credit.
-```
