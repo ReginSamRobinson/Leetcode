@@ -1,40 +1,34 @@
-Leetcode Solutions
+# Leetcode Solutions
 
-Welcome to my collection of Leetcode problem solutions! 🚀
+- A collection of personal solutions to various Leetcode problems, focused on clarity, efficiency, and readability.  
+- Solutions are organized by problem number and name, each typically including the implemented code, and explanatory comments when needed.  
+- This repository is designed to track progress, share knowledge, and improve problem-solving skills.
 
-This repository contains my personal solutions to a variety of coding problems from Leetcode. Each solution is written with clarity and efficiency in mind, often with comments and explanations.
-📚 Contents
+## Features
 
-    Solutions are organized by problem number and name.
-    Each folder or file usually contains:
-        The problem statement (as a comment or in a separate file)
-        My code solution
-        Explanations or comments (when needed)
+- Organized by problem name
+- Each solution includes:
+  - Code solution
+  - Comments or explanations where applicable
+- Written with clarity and learning in mind
 
-💡 Purpose
+## Languages Used
 
-    Track my progress on Leetcode.
-    Share approaches and code with others.
-    Improve problem-solving and coding skills.
+- Python  
 
-🛠️ Languages Used
+## Usage
 
-List the languages you use, for example:
+To use this repository:
 
-    Python
-    Java
-    C++
-    JavaScript
+1. Browse for the problem of interest.  
+2. Read through the code and any included explanations.  
+3. Run the code in your local development environment or any online compiler/interpreter of your choice.
 
-🧑‍💻 How to Use
+## Contributions
 
-    Find the problem you’re interested in.
-    Read the code and comments.
-    Run the code in your local environment or preferred compiler/interpreter.
+Feel free to contribute by opening issues or pull requests to report bugs, suggest optimizations, or share alternative approaches.
 
-🤝 Contributions
+## License
 
-Feel free to open issues or pull requests if you spot bugs or want to discuss alternative solutions!
-📜 License
-
-This repository is for educational purposes. If you use or share these solutions, please give appropriate credit.
+This project is for educational use. If you share or use these solutions, please credit the original author.
+"""
