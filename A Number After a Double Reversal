@@ -1,0 +1,10 @@
+class Solution:
+    def isSameAfterReversals(self, num: int) -> bool:
+        s1=str(num)
+        r1=int(s1[::-1])
+        s2=str(r1)
+        r2=int(s2[::-1])
+        if r2==num:
+            return True
+        else:
+            return False
