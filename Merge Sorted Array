@@ -1,0 +1,8 @@
+class Solution:
+    def merge(self, nums1, m, nums2, n):
+
+        temp=[]
+        temp.extend(nums1[:m])
+        temp.extend(nums2)
+        temp.sort()
+        nums1[:]=temp
