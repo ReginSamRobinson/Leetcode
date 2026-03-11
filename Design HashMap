@@ -1,0 +1,43 @@
+class MyHashMap:
+
+    def __init__(self):
+        self.size = 1000
+        self.hashmap = [[] for _ in range(self.size)]
+
+    def put(self, key: int, value: int) -> None:
+        index = key % self.size
+        bucket = self.hashmap[index]
+        n = len(bucket)
+
+        for i in range(n):
+            if bucket[i][0] == key:
+                bucket[i][1] = value
+                return
+                
+        bucket.append([key, value])
+
+    def get(self, key: int) -> int:
+        index = key % self.size
+        bucket = self.hashmap[index]
+        n = len(bucket)
+
+        for i in range(n):
+            if bucket[i][0] == key:
+                return bucket[i][1]
+
+        return -1
+
+    def remove(self, key: int) -> None:
+        index = key % self.size
+        bucket = self.hashmap[index]
+        n = len(bucket)
+
+        value = None
+        for i in range(n):
+            if bucket[i][0] == key:
+                value = bucket[i][1]
+
+        if value:
+            bucket.remove([key, value])
+
+
